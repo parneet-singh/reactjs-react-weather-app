@@ -1,0 +1,48 @@
+.weather > span {
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+  color: #000000;
+}
+.weather > span:before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    height: 3px;
+    width: 3px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+}
+.main-toggle span {
+  margin: 0 0 0 16px;
+}
+.main-toggle span:last-child {
+  margin-left: 11px;
+}
+.weather button {
+		background: #6bbf6b;
+		border: none;
+		border-radius: 30px;
+		outline: none;
+		width: 45px;
+		height: 20px;
+		margin: 5px 5px 0;
+		cursor: pointer;
+		position: relative;
+		transition: background .2s;
+}
+.weather button:active {
+		background: #67b567;
+	}
+.weather #unit-toggle {
+		position: absolute;
+		display: inline-block;
+		left: -8px;
+		top: 2px;
+		width: 15px;
+		height: 15px;
+		background: #fff;
+		border-radius: 50%;
+		transition: left .2s;
+}
